@@ -48,6 +48,7 @@ final class MainController extends AbstractController
         $form = $this->createFormBuilder($contact)
             ->add('firstName', null, ['label' => 'Prénom'])
             ->add('name', null, ['label' => 'Nom'])
+            ->add('phoneNumber', null, ['label' => 'Numéro de téléphone'])
             ->add('message', null, ['label' => 'Message'])
             ->add('send', SubmitType::class, ['label' => 'Envoyer'])
             ->getForm();
